@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sistema de Cadastro de Alunos</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade">
+
+        <label for="curso">Curso</label>
+        <input type="text" id="curso">
+
+        <label for="nota1">Nota 1</label>
+        <input type="number" id="nota1">
+
+        <label for="nota2">Nota 2</label>
+        <input type="number" id="nota2">
+
+        <button onclick="cadastrarAluno()">
+            Cadastrar
+        </button>
+
+        <h2>Alunos Cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Curso</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabelaAlunos"></tbody>
+        </table>
+
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
